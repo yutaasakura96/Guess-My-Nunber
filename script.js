@@ -26,6 +26,11 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
 
+    if (score > highScore) {
+      highScore = score;
+      document.querySelector('.highscore').textContent = highScore;
+    }
+
     // WRONG GUESS: TOO HIGH
   } else if (guess > secretNumber) {
     if (score > 1) {
@@ -53,7 +58,6 @@ document.querySelector('.check').addEventListener('click', function () {
 // AGAIN BUTTON FUNCTIONALITY
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
-  highScore = 0;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   console.log(secretNumber);
   document.querySelector('.message').textContent = 'Start guessing...';
