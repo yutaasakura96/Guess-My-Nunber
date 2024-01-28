@@ -1,5 +1,5 @@
 # <a href="https://guessmynumber-yasakura.netlify.app" target="_blank">Guess My Number</a>
-This repository contains a simple number guessing game built using HTML, CSS, and JavaScript. In this game, the player needs to guess a number between 1 and 20, and the game provides feedback on whether the guess is too high or too low until the correct number is guessed.
+This repository contains a simple number guessing game built using HTML, CSS, and JavaScript.
 
 
 ## How to Play
